@@ -1,0 +1,109 @@
+body {
+	background-color: #fda;
+}
+
+.reveal {
+	font-family: 'Oswald', sans-serif;
+	color: #A30;
+	text-shadow: .03em .03em rgba(110, 30, 0, 0.3);
+}
+
+.reveal h1,
+.reveal h2 {
+	font-family: 'Fugaz One', cursive;
+	color: #A30;
+	text-shadow: 2px 2px #444;
+	text-shadow: .03em .03em rgba(110, 30, 0, 0.3);
+}
+
+.reveal section img {
+	border-color: #A30;
+}
+
+.reveal h1 {
+	font-size: 2.4em;
+	margin: 0;
+}
+
+.reveal h1 + .title-continuation {
+	display: block;
+	margin-top: -.25em;
+	text-transform: uppercase;
+}
+
+.reveal .title-author {
+	margin: 1.5em;
+	font-size: .8em;
+}
+
+.reveal h2 > small {
+	vertical-align: baseline;
+	font-size: 40%;
+	opacity: 0.6;
+}
+
+.reveal .image-list li {
+	list-style: none;
+	display: inline-block;
+	margin: .5em;
+}
+
+.reveal .image-list img {
+	border: none;
+	margin-bottom: 5px;
+}
+
+.reveal .image-list figcaption {
+	font-size: 80%;
+	text-align: center;
+}
+
+.reveal .dark-bg,
+.reveal .dark-bg h1,
+.reveal .dark-bg h2 {
+	color: #fff;
+}
+
+.reveal blockquote {
+	box-shadow: none;
+	background: transparent;
+	position: relative;
+}
+
+.reveal blockquote::before {
+	content: '“';
+	position: absolute;
+	font-size: 700%;
+	opacity: .2;
+	top: -.25em;
+	left: -.25em;
+}
+
+.reveal blockquote cite {
+	text-align: right;
+	display: block;
+}
+
+.slide-background.present.fade-content::before {
+	content: '';
+	background-color: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	animation: fade-content 5s forwards;
+}
+
+.reveal .slides .fade-content.present {
+	animation: fade-content 5s forwards;
+}
+
+@keyframes fade-content {
+	0%, 80% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
